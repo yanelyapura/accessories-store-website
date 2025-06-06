@@ -57,7 +57,7 @@
                 para destacar tu estilo y personalidad.</p>
         </div>
 
-        <section class="index-imagenes container text-center my-5">
+        <section class="text-center mb-5 fade-in">
             <h2>Destacados</h2>
             <div class="grid-destacados">
                 <div class="item">
@@ -92,6 +92,27 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 
 </html>

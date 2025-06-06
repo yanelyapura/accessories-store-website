@@ -13,7 +13,7 @@
 <body>
     <header class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html"><img src="img/BRILLA_Horitzontal.png" alt="Home" width="800" /></a>
+            <a href="index.html"><img src="img/BRILLA_Horitzontal.png" alt="Home" width="200" /></a>
             <nav>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
@@ -26,39 +26,36 @@
     </header>
 
     <main class="container py-5">
-        <section class="text-center mb-5">
+        <section class="text-center mb-5 fade-in">
             <h1>Lo que dicen nuestras clientas</h1>
-            <p class="lead">Historias reales de mujeres que eligen brillar con nuestros accesorios.</p>
+            <p class="lead">Testimonios reales que reflejan la experiencia con Brilla</p>
         </section>
 
         <section class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">"Me enamoré del collar 'Lua'. Es delicado, cómodo y me lo elogian siempre.
-                            Gracias Brilla por tanto amor en cada detalle."</p>
-                        <h5 class="card-title mt-3">- Mariana G.</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">"El envío llegó rapidísimo y perfectamente empaquetado. ¡Ideal para
-                            regalar! Mi hermana quedó fascinada."</p>
-                        <h5 class="card-title mt-3">- Celeste R.</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">"Brilla no es solo una marca, es una experiencia. Me sentí cuidada desde el
-                            primer momento. ¡Ya soy clienta fija!"</p>
-                        <h5 class="card-title mt-3">- Agustina L.</h5>
-                    </div>
-                </div>
-            </div>
+            <!-- Testimonio 1 -->
+            <article class="col-md-4 fade-in bg-light p-4 rounded shadow">
+                <blockquote class="blockquote">
+                    <p>"Los accesorios de Brilla son hermosos y de excelente calidad. Me siento única cada vez que los
+                        uso."</p>
+                    <footer class="blockquote-footer mt-3">María López</footer>
+                </blockquote>
+            </article>
+
+            <!-- Testimonio 2 -->
+            <article class="col-md-4 fade-in bg-light p-4 rounded shadow">
+                <blockquote class="blockquote">
+                    <p>"Excelente atención y entrega rápida. Recomiendo 100% sus productos artesanales."</p>
+                    <footer class="blockquote-footer mt-3">Ana Torres</footer>
+                </blockquote>
+            </article>
+
+            <!-- Testimonio 3 -->
+            <article class="col-md-4 fade-in bg-light p-4 rounded shadow">
+                <blockquote class="blockquote">
+                    <p>"Brilla logró que encuentre accesorios que reflejan mi personalidad y estilo."</p>
+                    <footer class="blockquote-footer mt-3">Lucía Martínez</footer>
+                </blockquote>
+            </article>
         </section>
     </main>
 
@@ -67,6 +64,27 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animación fade-in JS (puedes copiar este script en todas las páginas) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 
 </html>
