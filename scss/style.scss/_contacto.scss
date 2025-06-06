@@ -1,0 +1,27 @@
+// _contacto.scss
+form {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-in-out;
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-radius: 5px;
+    }
+
+    .btn {
+        background-color: $primary-color;
+        color: $dark-color;
+        border: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}

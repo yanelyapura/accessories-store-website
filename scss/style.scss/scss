@@ -1,0 +1,15 @@
+@use 'style/variables';
+@use 'pages/home';
+@use 'pages/testimonios';
+@use 'pages/contacto';
+@use 'pages/productos';
+@use 'style/contacto';
+@use 'style/footer';
+@use 'style/home';
+@use 'style/productos';
+
+
+
+
+
+

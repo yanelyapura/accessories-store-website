@@ -1,0 +1,24 @@
+form {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    }
+
+    label {
+        color: #b08968;
+        font-weight: 600;
+    }
+
+    .btn {
+        background-color: #b08968;
+        color: #fff;
+
+        &:hover {
+            background-color: #a07556;
+        }
+    }
+}

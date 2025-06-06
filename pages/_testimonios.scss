@@ -1,0 +1,20 @@
+.testimonios {
+    .card {
+        border: none;
+        background-color: #fefefe;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #b08968;
+        }
+
+        .card-text {
+            font-style: italic;
+        }
+    }
+}
