@@ -4,19 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Productos | Brilla</title>
+    <meta name="description"
+        content="Descubrí nuestros accesorios únicos: aros, pulseras, collares y más. Hechos con amor para mujeres auténticas.">
+    <meta name="keywords" content="accesorios mujer, joyas, collares, pulseras, aros, Brilla">
+    <meta name="author" content="Brilla Accesorios">
+
+    <title>Productos | Brilla Accesorios</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="bg-light py-3">
+    <!-- Header -->
+    <header class="bg-light py-3 shadow-sm">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html"><img src="img/BRILLA_Horitzontal.png" alt="Home" width="800" /></a>
-            <nav>
+            <a href="index.html">
+                <img src="img/BRILLA_Horitzontal.png" alt="Logo de Brilla" width="800" class="img-fluid" />
+            </a>
+            <nav aria-label="Menú principal">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html"
+                            aria-current="page">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -25,55 +36,105 @@
         </div>
     </header>
 
-    <main class="container py-5">
+    <!-- Contenido principal -->
+    <main class="container my-5">
         <h1 class="text-center mb-4">Nuestra Colección</h1>
 
-        
+        <section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" aria-label="Listado de productos">
 
-        <div class="row g-4">
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <img src="img/colección-de-accesorios-femeninos-13066844.webp" class="card-img-top" alt="coleccion 2025" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Accesorios de oferta</h5>
-                        <p class="card-text">Desde  $3.000</p>
+            <!-- Producto 1 -->
+            <article class="col">
+                <div class="product-card fade-in">
+                    <img src="img/anillos.jpg" class="card-img-top img-fluid"
+                        alt="Anillo dorado ajustable de estilo minimalista" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Anillo Dorado</h2>
+                        <p class="card-text">Anillo ajustable en tono dorado, ideal para looks minimalistas y elegantes.
+                        </p>
+                        <p class="text-muted fw-semibold">$15.000</p>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <img src="img/collar lua.jpg" class="card-img-top" alt="Collar Lúa" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Collar y anillo Lúa</h5>
-                        <p class="card-text">$35.000</p>
+            <!-- Producto 2 -->
+            <article class="col">
+                <div class="product-card fade-in">
+                    <img src="img/aros largos.jpg" class="card-img-top img-fluid"
+                        alt="Aros largos brillantes para eventos" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Aros Brillantes</h2>
+                        <p class="card-text">Aros largos con detalles brillantes que iluminan cualquier outfit de noche.
+                        </p>
+                        <p class="text-muted fw-semibold">$95.000</p>
                     </div>
-
-                
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <img src="img/make up.jpg" class="card-img-top" alt="Maquillaje" />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Make up Nais</h5>
-                        <p class="card-text">Desde $26.999</p>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="col">
+                <div class="product-card fade-in">
+                    <img src="img/collar de perlas.avif" class="card-img-top img-fluid" alt="Collar de perlas naturales"
+                        loading="lazy">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Collar de Perlas</h2>
+                        <p class="card-text">Collar clásico de perlas naturales. Elegancia atemporal para mujeres
+                            únicas.</p>
+                        <p class="text-muted fw-semibold">$85.000</p>
                     </div>
+                </div>
+            </article>
 
-                    
-            <!-- Agregá más productos siguiendo el mismo formato -->
-        </div>
+            <!-- Producto 4 -->
+            <article class="col">
+                <div class="product-card fade-in">
+                    <img src="img/pulseras boho.webp" class="card-img-top img-fluid"
+                        alt="Pulsera tejida con detalles dorados" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Pulsera Boho</h2>
+                        <p class="card-text">Pulsera estilo bohemio con cuentas y detalles dorados. Ideal para uso
+                            diario.</p>
+                        <p class="text-muted fw-semibold">$9.999</p>
+                    </div>
+                </div>
+            </article>
 
-        
+            <!-- Producto 5 -->
+            <article class="col">
+                <div class="product-card fade-in">
+                    <img src="img/aros de resina.webp" class="card-img-top img-fluid"
+                        alt="Aros de resina en color rosado pastel" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Aros Rosados</h2>
+                        <p class="card-text">Livianos, modernos y femeninos. Aros de resina ideales para primavera.</p>
+                        <p class="text-muted fw-semibold">$21.999</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 6 -->
+            <article class="col">
+                <div class="product-card fade-in">
+                    <img src="img/set aros collar.jpg" class="card-img-top img-fluid" alt="Set de collar y aros dorados"
+                        loading="lazy">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Set Dorado</h2>
+                        <p class="card-text">Set de collar y aros dorados. Combinación ideal para ocasiones especiales.
+                        </p>
+                        <p class="text-muted fw-semibold">$110.000</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <p class="mb-0">&copy; 2025 Brilla. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    
 </body>
 
 </html>

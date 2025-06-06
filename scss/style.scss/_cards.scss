@@ -1,0 +1,43 @@
+// _cards.scss
+.grid-destacados {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item {
+        text-align: center;
+        transition: transform $transition-fast;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 0.75rem;
+            font-size: 1.2rem;
+            color: $primary-color;
+        }
+    }
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+    border-bottom: 2px solid $primary-color;
+}
