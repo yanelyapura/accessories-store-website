@@ -1,4 +1,6 @@
-// _cards.scss
+@use 'variables' as v;
+
+
 .grid-destacados {
     display: flex;
     gap: 2rem;
@@ -7,7 +9,7 @@
 
     .item {
         text-align: center;
-        transition: transform $transition-fast;
+        transition: transform v.$transition-fast;
 
         &:hover {
             transform: scale(1.05);
@@ -23,7 +25,7 @@
         h3 {
             margin-top: 0.75rem;
             font-size: 1.2rem;
-            color: $primary-color;
+            color: v.$primary-color;
         }
     }
 }
@@ -39,5 +41,5 @@
 .card-img-top {
     object-fit: cover;
     height: 250px;
-    border-bottom: 2px solid $primary-color;
+    border-bottom: 2px solid v.$primary-color;
 }

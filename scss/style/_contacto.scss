@@ -1,4 +1,6 @@
-// _contacto.scss
+@use 'sass:color';
+@use 'variables' as v;
+
 form {
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -15,13 +17,13 @@ form {
     }
 
     .btn {
-        background-color: $primary-color;
-        color: $dark-color;
+        background-color: v.$primary-color;
+        color: v.$dark-color;
         border: none;
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: darken($primary-color, 10%);
+            background-color: color.adjust(v.$primary-color, $lightness: -10%);
         }
     }
 }
